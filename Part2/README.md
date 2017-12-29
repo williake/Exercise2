@@ -1,6 +1,6 @@
 # Avoiding data races
 
-In the part you will solve [the concurrent access problem from Exercise 1](https://github.com/TTK4145/Exercise1/tree/master/Part4#part-4-finally-some-code), such that the final result is always zero. You can choose to either use the provided starter code or to copy your solution to Exercise 1 into the suitable directories. In the go-channel part you will probably wish to use the provided starter code as no equivalent exists in Exercise 1.
+In this part you will solve [the concurrent access problem from Exercise 1](https://github.com/TTK4145/Exercise1/tree/master/Part4#part-4-finally-some-code), such that the final result is always zero. You can choose to either use the provided starter code or to copy your solution to Exercise 1 into the suitable directories. In the go-channel part you will probably wish to use the provided starter code as no equivalent exists in Exercise 1.
 
 In your solution, make sure that the two threads intermingle. Running them one after the other would somewhat defeat the purpose. It may be useful to change the number of iterations in one of the threads, such that the expected final result is not zero (say, -1). This way it is easier to see that your solution actually works, and isn't just printing the initial value.
 
