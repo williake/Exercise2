@@ -17,3 +17,6 @@
 
 ### List some advantages of using asynchronous message passing over lock-based synchonrization primitives.
 > *Your answer here*
+
+### List some advantages of using lock-based synchonrization primitives over message passing.
+> *Your answer here*
