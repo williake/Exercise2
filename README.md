@@ -3,7 +3,8 @@
 ## Parts
 - [Part 1: Some theory](./Part1/README.md) 
 - [Part 2: Avoiding data races](./Part2/README.md) 
-- [Part 3: Choosing a language](./Part3/README.md) 
+- [Part 3: (OPTIONAL) Protection against data races](./Part3/README.md) 
+- [Part 4: Choosing a language](./Part4/README.md) 
 
 ## Approval
 When asking for approval, make sure to prepare the following.
