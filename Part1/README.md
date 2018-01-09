@@ -15,7 +15,10 @@
 ### What is a critical section?
 > *Your answer here*
 
-### List some advantages of using asynchronous message passing over lock-based synchonrization primitives.
+### What is the dfifference between race conditions and data races?
+ > *Your answer here*
+
+### List some advantages of using message passing over lock-based synchonrization primitives.
 > *Your answer here*
 
 ### List some advantages of using lock-based synchonrization primitives over message passing.
