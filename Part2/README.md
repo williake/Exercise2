@@ -11,19 +11,14 @@ In your solution, make sure that the two threads intermingle. Running them one a
  - Acquire the lock, do your work in the critical section, and release the lock
 
 
-### Go (lock)
-
-We are doing Go a great disservice in this exercise, since it has a message-passing no-sharing approach to concurrency. With that said, we will still go down the path of using shared variables. The [sync](https://golang.org/pkg/sync/) package has a Mutex type, you can use this to lock the shared variable before modifying it.
-
-
-### Go (channel)
-We also have a more idiomatic way. Create a server that [`select{}`](http://golang.org/ref/spec#Select_statements)s transformations to its own data. Have two other goroutines tell the server to increment & decrement its local variable. Note that this variable will no longer be global, so it cannot be read by other goroutines. The proper way to handle this is to create another `select{}`-case where others can request a copy of the value.
+### Go
+Using shared variable synchronization is not the idiomatic go. You should instead create a server that [`select{}`](http://golang.org/ref/spec#Select_statements)s transformations to its own data. Have two other goroutines tell the server to increment & decrement its local variable. Note that this variable will no longer be global, so it cannot be read by other goroutines. The proper way to handle this is to create another `select{}`-case where others can request a copy of the value.
 
 
 Remember from Exercise 1 where we had no good way of waiting for a goroutine to finish? Try sending a "finished"/"worker done" message on a separate channel. If you use different channels for the two threads, you will have to use [`select { case... }`](http://golang.org/ref/spec#Select_statements) so that it doesn't matter what order they arrive in.
 
 
-It seems that Go's approach to concurrency does not lend itself well to solving this (admittedly contrived) problem. Do this observation fit well with your answers in Part1?
+In the theory part you listed some advantages with message passing and shared variable synchronization. Do you still agree with what you answered?
 
 ### Python
 
