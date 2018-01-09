@@ -1,10 +1,6 @@
 # Protection against data races
 
 This is an optional exercise. You are not recommended to do this for "completion" or "acheivement points", as it most likeley wont be worth it. You should only do it if you're interested in learning more about how different languages can protect against data races or you're considering to use one of the featured languages in your project. The languages chosen is not a complete list, but rather some examples that might be usefull in context to this course.
-
-## First some research
-### What is the dfifference between race conditions and data races?
- > *Your answer here*
  
 ## Erlang
 Erlang disallows mutability of variables completely, a new state will instead be reached by calling into a different function (or the same function with different arguments). This means it will be impossible to solve the task from Part2 with lock based synchronization. Instead the "go-channel" approach needs to be taken, and a server needs to be created. These servers are so common in Erlang that they have been made an [OTP design pattern](http://erlang.org/doc/design_principles/gen_server_concepts.html). To not obscurify the erlang code this approach have not been taken in the starter code, instead a program very similar to the go-channel solution have been made. Complete the program and verify that the answer is 0.
