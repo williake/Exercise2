@@ -27,4 +27,4 @@ In the theory part you listed some advantages with message passing and shared va
 
 ### Python
 
-Python provides both [Locks](http://docs.python.org/2.7/library/threading.html#lock-objects) (which are like mutexes) and [Queues](http://docs.python.org/2/library/queue.html) (which are kind of like channels). Solve the problem in whatever way you believe to be the simples.
+Python provides both [Locks](http://docs.python.org/2.7/library/threading.html#lock-objects) (which are like mutexes) and [Queues](http://docs.python.org/2/library/queue.html) (which are kind of like channels). Solve the problem in whatever way you believe to be the simplest.
